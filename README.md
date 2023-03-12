@@ -4,6 +4,7 @@
 
 ```console
 make run
+make clean
 ```
 
 ## References
