@@ -18,5 +18,7 @@ os.bin: boot.bin kernel.bin
 run: os.bin
 	qemu-system-i386 -fda $<
 
+build: os.bin
+
 clean:
 	$(RM) *.bin *.o

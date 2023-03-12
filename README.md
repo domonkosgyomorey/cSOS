@@ -3,8 +3,7 @@
 ## Quick start
 
 ```console
-make run
-make clean
+make run clean
 ```
 
 ## References
