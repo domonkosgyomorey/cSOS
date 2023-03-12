@@ -13,6 +13,8 @@ mov bp, 0x8000
 mov sp, bp
 
 call load_kernel
+mov ax, 0x0
+int 0x10
 call switch_to_protected
 
 jmp $
