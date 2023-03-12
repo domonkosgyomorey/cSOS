@@ -1,5 +1,7 @@
 # A simple Operating System
 
+## Dev on Unix ( Ubuntu )
+
 ## Quick start
 
 ```console
