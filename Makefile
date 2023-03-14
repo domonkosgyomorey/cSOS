@@ -18,10 +18,5 @@ os.bin: boot.bin kernel.bin
 run: os.bin
 	qemu-system-i386 -drive file=$<,format=raw,index=0
 
-run_d: os.bin
-	qemu-system-i386 -s -S -drive file=$<,format=raw,index=0
-
-debug: run_d clean
-
 clean:
 	$(RM) *.bin *.o

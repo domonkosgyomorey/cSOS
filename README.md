@@ -1,12 +1,17 @@
 # A simple Operating System
 
-## Dev on Unix ( Ubuntu )
+## Develop and testing on Unix system
 
 ## Quick start
 
 ```console
-make run clean
+make
 ```
+
+## OS has
+- Communicate hardwares throught IO ports ( IO utility )
+- Simple VGA driver for 80x25 text mode
+- VGA driver can ( put char on the screen, and print a string ) with colors
 
 ## References
 - [nasm](https://www.nasm.us) is the assembler
