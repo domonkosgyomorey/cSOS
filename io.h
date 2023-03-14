@@ -6,7 +6,7 @@ unsigned char io_byte_in(unsigned short port){
 	return result;
 }
 
-unsigned char io_byte_out(unsigned short port, unsigned short data){
+void io_byte_out(unsigned short port, unsigned short data){
 	__asm__("out %%al, %%dx"::"a"(data),"d"(port));
 }
 
