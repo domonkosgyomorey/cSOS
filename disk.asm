@@ -1,5 +1,6 @@
 [bits 16]
 load_disk:
+	call reset_floppy_disk
 	pusha
 	push dx
 	; disk read mode
@@ -32,3 +33,12 @@ disk_sectors_error:
 
 disk_loop:
 	jmp $
+
+reset_floppy_disk:
+	pusha
+	mov ah, 0x0
+	mov dl, 0x0
+	int 0x13
+	jc reset_floppy_disk
+	popa
+	ret
